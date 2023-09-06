@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body{
+             display: flex;
+             flex-direction: row;
+        }
+
+    div.horizontal{
+        margin-left: 20%;
+    }
+
+    .first{
+        background-color: rgb(173, 228, 230)
+    }
+
+    .second{
+        width:500px;
+        margin: 10px;
+    }
+
+    .vertical ul {
+        list-style-type: none;
+        margin: 10px 10px 0 10px;
+        padding: 0;
+        width: 200px;
+        height: 224px;
+        background-color: #f1f1f1;
+      }
+      .vertical li a {
+        display: block;
+        color: #2f10dc;
+        padding: 8px 16px;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      /* Change the link color on hover */
+      .vertical li a:hover {
+        background-color: #f2b855;
+        color: #fff;
+      }
+      .vertical .icon {
+        margin-right: 10px;
+      }
+      .vertical li a.active {
+        background-color: orange;
+        color: #fff;
+      }
+
+      .horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cfcbcb;
+}
+.horizontal{
+    padding-top: 100px;
+}
+.horizontal li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+.horizontal li:last-child {
+  border-right: none;
+}
+
+.horizontal li a {
+  display: block;
+  color: rgb(44, 30, 231);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal li a:hover:not(.active) {
+  background-color: #666464;
+  color: aliceblue;
+}
+
+.horizontal .active {
+  background-color: #abaeae;
+  color: aliceblue;
+}
+    </style>
+  </head>
+  <body >
+    <div class="vertical">
+        <h1>Vertical Navigation Bar</h1>
+        <div class="box1" style="border: 2px solid black; width: 220px">
+           <ul class="first" >
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#"> Java</a></li>
+                <li><a href="#"> CSS</a></li>
+                <li><a href="#"> HTML</a></li>
+                <li><a href="#"> Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="horizontal">
+        <h1>Horizontal Navigation Bar</h1>
+        <div class="box" style="border:2px solid black;width: 525px;";>
+            <ul class="second">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#contact">Java</a></li>
+                <li><a href="#contact">HTML</a></li>
+                <li><a href="#contact">CSS</a></li>
+                <li><a href="#contact"></a></li>
+            </ul>
+        </div>
+    </div>
+ 
+  </body>
+</html>
